@@ -13,7 +13,7 @@
 <!-- Font Awesome -->
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <!-- Google Font -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -673,6 +673,47 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
     document.body.removeChild(a);
 });
 </script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/918318255729" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<style>
+.whatsapp-float{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 34px;
+    line-height: 60px;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,.3);
+    z-index: 9999;
+    transition: .3s;
+}
+
+.whatsapp-float:hover{
+    transform: scale(1.1);
+    color:#fff;
+    background:#20ba5a;
+}
+
+@media(max-width:768px){
+    .whatsapp-float{
+        width:55px;
+        height:55px;
+        line-height:55px;
+        font-size:30px;
+        right:18px;
+        bottom:18px;
+    }
+}
+</style>
 </body>
 
 </html>
